@@ -101,11 +101,16 @@
     transition: all ease 0.3s;
 }
 
-    aside.emoji-picker-react {
-        width: auto;
-        background: none;
+.emoji-picker-react .emoji-group:before {
+    display: none;
+}
 
-    }
-    .emoji-picker-react .emoji-group:before {
-        background: none;
-    }
+
+aside.emoji-picker-react {
+    width: auto;
+    background: none;
+
+}
+.emoji-picker-react .emoji-group:before {
+    background: none;
+}

@@ -24,6 +24,7 @@ export default () => {
   useEffect(()=>{
     if(user !== null){
       let unsub = Api.onChatList(user.id, setChatList);
+
       return unsub;
     }
   },[user])
@@ -55,6 +56,7 @@ export default () => {
 
   if(user === null){
        return (
+        
         // <Login onReceive={handleLoginDataFacebook}/> 
         <Login 
           onReceiveGoogle={actionLoginDataGoogle} 

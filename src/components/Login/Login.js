@@ -1,6 +1,9 @@
 import React from 'react';
 import Api from '../../Api';
-import GTranslateIcon from '@material-ui/icons/GTranslate';
+
+import imglogoGoogle from '../../image/pesquisa.png';
+import imgAlisson from '../../image/alissonCamisaBranca.jpg';
+
 import './Login.css';
 
 export default ({onReceiveGoogle}) => {
@@ -14,14 +17,16 @@ export default ({onReceiveGoogle}) => {
             alert("Erro;");
         }
     }
-    
+
     return (
         <div className="login">
-            {/* <button onClick={handleFacebookLogin}>Logar com o Facebook</button> */}
-            <h1>Faça o login em meu Whatsapp Clone</h1>
+            <div>
+                <img src={imgAlisson} style={{width: '140px', borderRadius: '50%'}} alt="Alisson" />
+            </div>
+            <h1>Bem-vindo ao meu WhatsApp Clone</h1>
             <button onClick={actionLoginGoogle}>
-            <i class="bi bi-google"></i>
-                <GTranslateIcon />
+            <i className="bi bi-google"></i>
+            <img src={imglogoGoogle} style={{ width: '25px' }} alt="logo"/>
                 <div className="center">Logar com o Gmail</div>
             </button>
         </div>
